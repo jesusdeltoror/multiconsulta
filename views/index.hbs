@@ -1,0 +1,23 @@
+<h1>{{title}}</h1>
+<p>Welcome to 
+    <div>
+        {{data.datos}}
+        {{#each data.prom}}
+            <div>
+                <div>{{this.prom}}</div>
+                <div>{{this.class_id}}</div>
+            </div>
+            
+        {{/each}}
+        <button onclick="test(
+            {{data.datos}},
+            {{#each data.prom}}
+                {{this.prom}},
+                {{this.class_id}},
+            {{/each}}
+        )">Mostar</button>
+    </div>
+
+</p>
+
+<script src="./javascripts/x.js"></script>
